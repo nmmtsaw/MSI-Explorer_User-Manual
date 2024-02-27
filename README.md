@@ -34,6 +34,13 @@ When installation finished, it is ready to use napari.
 
 <img src="https://github.com/nmmtsaw/MSI-Explorer-Manual/assets/127961719/7cd6aa18-f0e3-4d72-8ff7-1d206c2f30db." width="800" height="350">
 
+
+####
+Upon uploading profile mode data, a pop-up appears prompting you to convert it to centroid mode.
+Selecting `Yes` converts the data, while `No` keeps it in its original profile format.
+
+![profile_centroid](https://github.com/nmmtsaw/MSI-Explorer-Manual/assets/127961719/5eecf5c2-e9b5-45da-a620-6dfaad058faf)
+
 ### 2. Calculating mean (average) intensity
 - To calculate the mean spectrum, click on `Show true mean spectrum`.
 - `Show image` to see the image view (Or it will automatically change.)
