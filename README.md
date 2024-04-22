@@ -26,7 +26,14 @@ When installation finished, it is ready to use napari.
    Just type napari and napari window will pop up.
    Choose the MSI-Explorer plug in.
 
+## Usage
+Start napari from the console with:
+
+    napari
+
+Navigate to `Plugins -> MSI-Explorer (MSI-Explorer)`
 ![Plugin](https://github.com/nmmtsaw/MSI-Explorer_User-Manual/assets/127961719/104718fa-227e-4117-9b52-f674a265d218)
+
 
 ### 1. Uploading and visualization of mass spectrometry imaging data
 - Select imzml file using `Load imzML`.
