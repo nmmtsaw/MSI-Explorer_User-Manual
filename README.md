@@ -1,6 +1,6 @@
 # User Manual
 
-The MSI-Explorer, a napari plug-in is a powerful tool designed for targeted biochemical annotations in MSI data. This user manual provides a comprehensive guide on how to install, use, and explore the functionalities of the plug-in within the napari platform. It covers data import, visualization, mean intensity calculation, region of interest (ROI) analysis, annotation with selected database and pre-processing such as noise reduction and normalization. 
+The MSI-Explorer, a napari plugin is a powerful tool designed for targeted biochemical annotations in MSI data. This user manual provides a comprehensive guide on how to install, use, and explore the functionalities of the plug-in within the napari platform. It covers data import, visualization, mean intensity calculation, region of interest (ROI) analysis, annotation with selected database and pre-processing such as noise reduction and normalization. 
 
 [MSI-Explorer] 
  
@@ -24,7 +24,7 @@ You can install `MSI-Explorer` via [pip]:
   
 When installation finished, it is ready to use napari.
    Just type napari and napari window will pop up.
-   Choose the MSI-Explorer plug in.
+   Choose the MSI-Explorer plugin.
 
 ## Usage
 Start napari from the console with:
@@ -136,8 +136,37 @@ Exact mass | Molecule name | Molecula formula
 
 
    
+### Updating MSI-Explorer plugin
+The method for updating the MSI-Explorer plugin depends on the initial installation method. Here's a breakdown of the options:
 
+- Installed via pip:
+Upgrade existing version: Use
+   
+     pip install MSI-Explorer -U
 
+  Upgrade existing version: Use 
+
+    
+ 
+ or 
+ 
+   pip install MSI-Explorer --upgrade 
+ 
+ to install the latest available release.
+ 
+- Installed via napari Plugin Browser:
+Update within napari: If a newer version exists, you can update directly through the napari plugin browser.
+
+- Installed locally with
+
+ pip install -e .
+
+No update needed: Simply replace the existing directory with the updated one containing the latest plugin code.
+
+- Installed locally with pip install .
+
+Uninstall existing version: Run pip uninstall MSI-Explorer to remove the current installation.
+Install updated version: Navigate to the directory containing the updated plugin code and run pip install .. Consider adding the -e flag during installation for future updates via the local directory method. This flag enables development mode, allowing updates through pip install -U or pip install --upgrade.
 
 
 
