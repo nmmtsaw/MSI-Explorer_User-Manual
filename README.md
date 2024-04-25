@@ -36,6 +36,14 @@ Start napari from the console with:
 Navigate to `Plugins -> MSI-Explorer (MSI-Explorer)`
 ![Plugin](https://github.com/nmmtsaw/MSI-Explorer_User-Manual/assets/127961719/104718fa-227e-4117-9b52-f674a265d218)
 
+## Re-opening environment for napari plugin
+Activate the environment.
+   
+    conda activate napari-env 
+
+Start napari from the console with:
+
+    napari  
 
 ### 1. Uploading and visualization of mass spectrometry imaging data
 - Select imzml file using `Load imzML`.
@@ -127,6 +135,14 @@ Exact mass | Molecule name | Molecula formula
 174.1117 | Arginine | C6H14N4O2
 244.0881 | Biotin | C10H16N2O3S
 
+#### The build-in database can be found by
+
+  
+    pip show MSI-Explorer
+   
+  
+and then find the location from there.
+
 ### 5. Region of interest (ROI) selection
 - To select the ROI, click on `Select ROI or mean spectrum`. Adjust the brush size and label color. You can fill the area by using paint icon. 
 - Then click on the `Calculate ROI mean spectrum`.
@@ -142,13 +158,15 @@ Exact mass | Molecule name | Molecula formula
 The method for updating the MSI-Explorer plugin depends on the initial installation method. Here's a breakdown of the options:
 
 - Installed via pip:
-Upgrade existing version: Use
-   
-     pip install MSI-Explorer -U   
+To uppgrade existing version: Use
+
+ 
+     pip install MSI-Explorer --U
+      
  
  or 
  
-   pip install MSI-Explorer --upgrade 
+    pip install MSI-Explorer --upgrade 
  
  
 - Installed via napari Plugin Browser:
@@ -156,17 +174,31 @@ Update within napari: If a newer version exists, you can update directly through
 
 - Installed locally with
 
-  pip install -e .
+
+    pip install -e .
+  
 
 No update needed: Simply replace the existing directory with the updated one containing the latest plugin code.
 
 - Installed locally with pip install .
 
-Uninstall existing version: Run pip uninstall MSI-Explorer to remove the current installation.
+Uninstall existing version: Run 
+
+
+   pip uninstall MSI-Explorer 
+
+
+to remove the current installation.
 
 Install updated version: Navigate to the directory containing the updated plugin code and run pip install .. 
 Consider adding the -e flag during installation for future updates via the local directory method. 
-This flag enables development mode, allowing updates through pip install -U or pip install --upgrade.
+This flag enables development mode, allowing updates through 
+
+  pip install -U 
+  
+  or 
+  
+   pip install --upgrade.
 
 
 
